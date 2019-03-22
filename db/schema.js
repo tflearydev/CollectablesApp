@@ -56,6 +56,6 @@ const UserSchema = new Schema({
     })
 
 module.exports = {
-    IdeaSchema: SneakerSchema,
+    SneakerSchema: SneakerSchema,
     UserSchema: UserSchema
 }
