@@ -5,9 +5,17 @@ const mongoose = require('./connection.js')
 const Schema = mongoose.Schema
 
 const SneakerSchema = new Schema({
-    name: {
+    brand: {
         type: String,
         required: true
+    },
+    model: {
+        type: String,
+        required: true
+    },
+    colorway: {
+        type: String,
+        required: true,
     },
     size: {
         type: Number,
@@ -19,11 +27,19 @@ const SneakerSchema = new Schema({
     },
     condition: {
         type: String,
-        required: true,
+        required: true
+    },
+    value: {
+        type: String,
+        required: false
     }
 })
 
 const UserSchema = new Schema({
+    userName: {
+        type: String,
+        required: true
+    },
     firstName: {
         type: String,
         required: true 
