@@ -5,6 +5,7 @@ const userController = require('./controllers/userController.js')
 app.use(express.json())
 app.use(express.static(__dirname + '/client/build/'));
 
+
 app.use('/api/users', userController)
 
 app.get('/', (req,res) => {
