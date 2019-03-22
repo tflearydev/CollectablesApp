@@ -5,27 +5,39 @@ const mongoose = require('./connection.js')
 const Schema = mongoose.Schema
 
 const SneakerSchema = new Schema({
-    title: {
+    name: {
         type: String,
-        default: 'New Title'
+        required: true
     },
-    description: {
-        type: String,
-        default: 'New Description'
+    size: {
+        type: Number,
+        required: true
     },
-    created: {
+    releaseDate: {
         type: Date,
-        default: new Date()
+        required: false
+    },
+    condition: {
+        type: String,
+        required: true,
     }
 })
 
 const UserSchema = new Schema({
-    userName: String,
-    firstName: String,
-    lastName: String,
-    email: String,
+    firstName: {
+        type: String,
+        required: true 
+    },
+    lastName: {
+        type: String,
+        required: true
+    },
+    email: {
+        type: String,
+        required: true,
+    },
     sneakers: [SneakerSchema],
-})
+    })
 
 module.exports = {
     IdeaSchema: SneakerSchema,
