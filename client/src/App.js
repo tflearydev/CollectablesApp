@@ -1,6 +1,14 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
+import axios from "axios";
 import './App.css';
+// import Navbar from "./components/Navbar"; plan to make a navbar
+// import HomePage from './components/HomePage.js'
+// import UserPage from './components/UserPage.js'
+// import SneakerPage from './components/SneakerPage.js'
+
+// import styled from 'styled-components'
+// remember styled at bottom, check 'diff' way to do it
 
 class App extends Component {
   render() {
