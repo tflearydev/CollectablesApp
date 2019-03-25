@@ -7,7 +7,7 @@ const mongoose = require('mongoose')
 if (process.env.MONGODB_URI) {
   mongoose.connect(process.env.MONGODB_URI)
 } else {
-  mongoose.connect('mongodb://localhost/idea-board', { useNewUrlParser: true })
+  mongoose.connect('mongodb://localhost/SneakerCollect', { useNewUrlParser: true })
 }
 
 mongoose.connection.on('error', err => {
