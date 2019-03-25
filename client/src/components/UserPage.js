@@ -3,14 +3,16 @@ import { Redirect, Link } from 'react-router-dom'
 import axios from 'axios'
 
 class UserPage extends Component {
+
+    // creating a method to get all users
     state = {
         users: [],
-        user: {
-            userName: '',
-            password: ''
-        },
-        redirectToHome: false,
-        createdUser: {}
+        // user: {
+        //     userName: '',
+        //     password: ''
+        // },
+        // redirectToHome: false,
+        // createdUser: {}
     }
 
     componentDidMount = () => {
@@ -22,6 +24,7 @@ class UserPage extends Component {
             this.setState({users: res.data})
         })
     }
+    // created a method to get all users
 
     createUser = () => {
         axios.post('/api/users', {user: this.state.user})
@@ -37,10 +40,10 @@ class UserPage extends Component {
         this.setState({user: newUser})
     }
 
-    handleSignUp = (e) => {
-        e.preventDefault()
-        this.createUser()
-    }
+    // handleSignUp = (e) => {
+    //     e.preventDefault()
+    //     this.createUser()
+    // }
     
     render() {
         if(this.state.redirectToHome === true) {
