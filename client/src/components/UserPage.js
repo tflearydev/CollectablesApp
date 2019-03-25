@@ -7,12 +7,12 @@ class UserPage extends Component {
     // creating a method to get all users
     state = {
         users: [],
-        // user: {
-        //     userName: '',
-        //     password: ''
-        // },
-        // redirectToHome: false,
-        // createdUser: {}
+        user: {
+            userName: '',
+            password: ''
+        },
+        redirectToHome: false,
+        createdUser: {}
     }
 
     componentDidMount = () => {
@@ -40,10 +40,10 @@ class UserPage extends Component {
         this.setState({user: newUser})
     }
 
-    // handleSignUp = (e) => {
-    //     e.preventDefault()
-    //     this.createUser()
-    // }
+    handleSignUp = (e) => {
+        e.preventDefault()
+        this.createUser()
+    }
     
     render() {
         if(this.state.redirectToHome === true) {

@@ -8,23 +8,23 @@ function Sneaker(props) {
             <input
                 type="text"
                 name="title"
-                onChange={(e) => props.handleChange(props.sneaker, e)}
-                onMouseOut={(e) => props.updateSneaker(props.sneaker, e)}
+                // onChange={(e) => props.handleChange(props.sneaker, e)}
+                // onMouseOut={(e) => props.updateSneaker(props.sneaker, e)}
                 value={props.sneaker.title}
             />
             <textarea
                 name="description"
                 cols="30"
                 rows="10"
-                onChange={(e) => props.handleChange(props.sneaker, e)}
-                onMouseOut={(e) => props.updateSneaker(props.sneaker, e)}
+                // onChange={(e) => props.handleChange(props.sneaker, e)}
+                // onMouseOut={(e) => props.updateSneaker(props.sneaker, e)}
                 value={props.sneaker.description}
             />
-            <div
+            <button
                 onClick={() => props.deleteSneaker(props.sneaker)}
             >
                 Delete Sneaker
-             </div>
+                </button>
              </div>
     )
 }

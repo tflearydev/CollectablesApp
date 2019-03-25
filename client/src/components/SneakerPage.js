@@ -79,30 +79,30 @@ class SneakerPage extends Component {
             })
     }
 
-    handleChange = (sneaker, event) => {
-        console.log("HANDLE CHANGE")
-        //Here we use the spread operator to clone the array
-        const newSneakers = [...this.state.sneakers]
+    // handleChange = (sneaker, event) => {
+    //     console.log("HANDLE CHANGE")
+    //     //Here we use the spread operator to clone the array
+    //     const newSneakers = [...this.state.sneakers]
     
-        //Map through this cloned state and transform the specific sneaker that has been updated.
-        const sneakers = newSneakers.map((savedSneaker) => {
-          if (savedSneaker._id === sneaker._id) {
-            //Here we are using bracket syntax instead of dot-notation to transform a specific property
-            //More info on bracket syntax here
-            //https://medium.com/@prufrock123/js-dot-notation-vs-bracket-notation-797c4e34f01d
-            savedSneaker[event.target.name] = event.target.value
-          }
-          return savedSneaker
-        })
-        this.setState({sneakers: sneakers})
-    }
+    //     //Map through this cloned state and transform the specific sneaker that has been updated.
+    //     const sneakers = newSneakers.map((savedSneaker) => {
+    //       if (savedSneaker._id === sneaker._id) {
+    //         //Here we are using bracket syntax instead of dot-notation to transform a specific property
+    //         //More info on bracket syntax here
+    //         //https://medium.com/@prufrock123/js-dot-notation-vs-bracket-notation-797c4e34f01d
+    //         savedSneaker[event.target.name] = event.target.value
+    //       }
+    //       return savedSneaker
+    //     })
+    //     this.setState({sneakers: sneakers})
+    // }
 
-    updateSneaker = (sneaker, e) => {
-        const userId = this.props.match.params.userId
-        axios.patch(`/api/users/${userId}/sneakers/${sneaker._id}`, {sneaker}).then(res => {
-          this.setState({sneakers: res.data.sneakers})
-        })
-    }
+    // updateSneaker = (sneaker, e) => {
+    //     const userId = this.props.match.params.userId
+    //     axios.patch(`/api/users/${userId}/sneakers/${sneaker._id}`, {sneaker}).then(res => {
+    //       this.setState({sneakers: res.data.sneakers})
+    //     })
+    // }
 
     render() {
         return (
@@ -110,9 +110,8 @@ class SneakerPage extends Component {
             {/* <Wrapper> */}
                 <h1>Sneaker Page</h1>
                 {/* <PrimaryButton */}
-                    onClick={this.createSneaker}
-                >
-                    New Sneaker
+                   <button onClick={this.createSneaker}>New Sneaker</button>
+                   
                 {/* </PrimaryButton>
                 <FlexRowCentered> */}
                 {
