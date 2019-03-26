@@ -16,7 +16,7 @@ router.post('/', (req, res) => {
 
   newUser
     .save()
-    .then(user => {
+    .then((user) => {
       res.json(user)
     })
     .catch(err => console.log(err))
@@ -27,9 +27,9 @@ router.get('/:userId', (req, res) => {
   User.findById(req.params.userId)
     .then(user => {
       user.sneakers = user.sneakers.reverse()
-      res.json(sneaker)
+      res.json(user)
     })
-    .catch(err => console.log(err))
+    .catch((err) => console.log(err))
 })
 
 router.post('/:userId/sneakers', (req, res) => {
@@ -37,7 +37,7 @@ router.post('/:userId/sneakers', (req, res) => {
     const newSneaker = new Sneaker({})
     user.sneakers.push(newSneaker)
 
-    user.save().then(user => {
+    user.save().then((user) => {
       res.json(newSneaker)
     })
   })
@@ -69,7 +69,7 @@ router.patch('/:userId/sneakers/:sneakerId', (req, res) => {
       sneaker.description = update.description
     }
 
-    user.save().then(user => {
+    user.save().then((user) => {
       user.sneakers = user.sneakers.reverse()
       res.json(user)
     })

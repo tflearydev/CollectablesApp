@@ -11,7 +11,7 @@ const Wrapper = styled.div`
 const Card = styled.div`
   display: flex;
   flex-direction: column;
-  background-color: #fafa98;
+  background-color: lightgray;
   align-items: center;
   padding: 20px;
   border: 1px solid lightgray;
@@ -29,14 +29,14 @@ const FlexRowCentered = styled(FlexContainerCentered)`
   flex-wrap: wrap;
 `
 
-const PrimaryButton = styled.button`
-  background-color: aquamarine;
-  color: #222;
-  font-weight: bold;
-  cursor: pointer;
-  padding: 15px;
-  font-size: 1em;
-`
+// const PrimaryButton = styled.button`
+//   background-color: aquamarine;
+//   color: #222;
+//   font-weight: bold;
+//   cursor: pointer;
+//   padding: 15px;
+//   font-size: 1em;
+// `
 
 class SneakerPage extends Component {
   state = {
@@ -83,7 +83,7 @@ class SneakerPage extends Component {
     const newSneakers = [...this.state.sneakers]
 
     // Map through this cloned state and transform the specific sneaker that has been updated.
-    const sneakers = newSneakers.map(savedSneaker => {
+    const sneakers = newSneakers.map((savedSneaker) => {
       if (savedSneaker._id === sneaker._id) {
         // Here we are using bracket syntax instead of dot-notation to transform a specific property
         // More info on bracket syntax here
@@ -112,8 +112,9 @@ class SneakerPage extends Component {
             Back
           </Button>
 
-          <h1>User's Collection</h1>
-          <Button onClick={this.createSneaker}>New Sneaker</Button>
+          <h1>User's Sneaker Collection</h1>
+          {/* <Button onClick={this.createSneaker}>New Sneaker</Button>
+          <FlexRowCentered> */}
           <FlexRowCentered>
             {this.state.sneakers.map(sneaker => {
               return (

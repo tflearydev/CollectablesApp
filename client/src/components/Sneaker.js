@@ -1,10 +1,38 @@
 import React from 'react'
-// import styled from 'styled-components'
+import styled from 'styled-components'
+
+const SneakerWrapper = styled.div`
+    display: flex;
+    flex-direction: column;
+    
+    input, textarea {
+        padding: 10px;
+        margin-bottom: 5px;
+        font-size: 1.05em;
+        background-color: transparent;
+        border: none;
+    }
+    input {
+        font-size: 1.15em;
+    }
+`
+
+const DeleteButton = styled.button`
+    background-color: red;
+    color: #eee;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 15px;
+    font-size: 1em;
+`
+
+
+
 
 function Sneaker (props) {
   return (
-    // <SneakerWrapper>
-    <div>
+    <SneakerWrapper>
+    
       <input
         type='text'
         name='title'
@@ -20,10 +48,11 @@ function Sneaker (props) {
         onMouseOut={e => props.updateSneaker(props.sneaker, e)}
         value={props.sneaker.description}
       />
-      <button onClick={() => props.deleteSneaker(props.sneaker)}>
+      <DeleteButton onClick={() => props.deleteSneaker(props.sneaker)}>
         Delete Sneaker
-      </button>
-    </div>
+      </DeleteButton>
+      </SneakerWrapper>
+    
   )
 }
 
