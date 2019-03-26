@@ -118,7 +118,7 @@ class SneakerPage extends Component {
             {this.state.sneakers.map(sneaker => {
               return (
                 <Card>
-                  <div>
+                  
                     <Sneaker
                       key={sneaker._id}
                       sneaker={sneaker}
@@ -126,7 +126,7 @@ class SneakerPage extends Component {
                       handleChange={this.handleChange}
                       updateSneaker={this.updateSneaker}
                     />
-                  </div>
+                  
                 </Card>
               )
             })}
