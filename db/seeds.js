@@ -1,4 +1,4 @@
-//Supplying some seed data
+// Supplying some seed data
 
 require('dotenv').config()
 const mongoose = require('mongoose')
@@ -9,21 +9,21 @@ const Sneaker = require('../models/Sneaker')
 
 const yeezy = new Sneaker({
   brand: 'Adidas',
-  model: "Yeezy Boost 700",
+  model: 'Yeezy Boost 700',
   colorway: 'Inertia',
   size: '10',
   releaseDate: '3/5/19',
   condition: 'A',
-  value: 'https://stockx.com/adidas-yeezy-boost-700-inertia',
+  value: 'https://stockx.com/adidas-yeezy-boost-700-inertia'
 })
 const nike = new Sneaker({
-    brand: 'Nike',
-    model: "Air Presto Off-White",
-    colorway: 'Black',
-    size: '10.5',
-    releaseDate: '11/5/19',
-    condition: 'A',
-    value: 'https://stockx.com/nike-air-presto-off-white-black-2018',
+  brand: 'Nike',
+  model: 'Air Presto Off-White',
+  colorway: 'Black',
+  size: '10.5',
+  releaseDate: '11/5/19',
+  condition: 'A',
+  value: 'https://stockx.com/nike-air-presto-off-white-black-2018'
 })
 const tray = new User({
   userName: 'tfleary_kicks',
