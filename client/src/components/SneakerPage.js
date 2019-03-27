@@ -36,7 +36,7 @@ const PrimaryButton = styled.button`
   cursor: pointer;
   padding: 15px;
   font-size: 1em;
-  border: 2px solid red;
+  border: 2px solid salmon;
   border-radius: 3px;
 `
 
@@ -47,7 +47,7 @@ margin-top: 20px;
 margin-right: 800px;
 width: 120px;
 border-radius: 10px;
-background: red;
+background: salmon;
 font-weight: bold;
 color: white;
 `
@@ -141,7 +141,7 @@ class SneakerPage extends Component {
           <PrimaryButton
                     onClick={this.createSneaker}
                 >
-                    Add a Sneaker
+                    + Add Sneaker
                 </PrimaryButton>
 
           <h1>User's Sneaker Collection</h1>

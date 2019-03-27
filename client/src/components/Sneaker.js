@@ -18,7 +18,7 @@ const SneakerWrapper = styled.div`
 `
 
 const DeleteButton = styled.button`
-    background-color: red;
+    background-color: salmon;
     color: #eee;
     font-weight: bold;
     cursor: pointer;
