@@ -7,11 +7,11 @@ const Schema = mongoose.Schema
 const SneakerSchema = new Schema({
     title: {
         type: String,
-        required: true
+        default: "Brand, Exact Model, and Color Here"
       },
       description: {
         type: String,
-        required: true
+        default: "Size, Release Date, Shoe Condition Here"
       }
 //   brand: {
 //     type: String,

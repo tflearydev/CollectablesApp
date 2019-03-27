@@ -29,16 +29,16 @@ const FlexRowCentered = styled(FlexContainerCentered)`
   flex-wrap: wrap;
 `
 
-const PrimaryButton = styled.button`
-  /* background-color: blue; */
-  color: blue;
-  font-weight: bold;
-  cursor: pointer;
-  padding: 15px;
-  font-size: 1em;
-  border: 2px solid salmon;
-  border-radius: 3px;
-`
+// const PrimaryButton = styled.button`
+//   /* background-color: blue; */
+//   color: blue;
+//   font-weight: bold;
+//   cursor: pointer;
+//   padding: 15px;
+//   font-size: 1em;
+//   border: 2px solid salmon;
+//   border-radius: 3px;
+// `
 
 const DeleteButton = styled.button`
 height: 40px;
@@ -104,20 +104,16 @@ class SneakerPage extends Component {
 
   handleChange = (sneaker, event) => {
     console.log('HANDLE CHANGE')
-    // Here we use the spread operator to clone the array
+    
     const newSneakers = [...this.state.sneakers]
 
-    // Map through this cloned state and transform the specific sneaker that has been updated.
     const sneakers = newSneakers.map(savedSneaker => {
       if (savedSneaker._id === sneaker._id) {
-        // Here we are using bracket syntax instead of dot-notation to transform a specific property
-        // More info on bracket syntax here
-        // https://medium.com/@prufrock123/js-dot-notation-vs-bracket-notation-797c4e34f01d
         savedSneaker[event.target.name] = event.target.value
       }
       return savedSneaker
     })
-    this.setState({ sneakers: sneakers })
+    this.setState({sneakers: sneakers})
   }
 
   updateSneaker = (sneaker, e) => {
@@ -138,15 +134,14 @@ class SneakerPage extends Component {
           </Button>
           <DeleteButton onClick={()=>this.deleteUser(this.state.user.userId)}>Delete User</DeleteButton>
 
-          <PrimaryButton
-                    onClick={this.createSneaker}
-                >
-                    + Add Sneaker
-                </PrimaryButton>
+          <br/>
+          <br/>
+          
 
           <h1>User's Sneaker Collection</h1>
-          {/* <Button onClick={this.createSneaker}>New Sneaker</Button>
-          <FlexRowCentered> */}
+          {/* <Button onClick={this.createSneaker}>New Sneaker</Button> */}
+          <button onClick={this.createSneaker}>+ Add Sneaker</button>
+
           <FlexRowCentered>
             {this.state.sneakers.map(sneaker => {
               return (

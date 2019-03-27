@@ -42,8 +42,7 @@ router.post('/:userId/sneakers', (req, res) => {
   User.findById(req.params.userId).then(user => {
     const newSneaker = new Sneaker({})
     user.sneakers.push(newSneaker)
-
-    user.save().then((user) => {
+    user.save().then(user => {
       res.json(newSneaker)
     })
   })
