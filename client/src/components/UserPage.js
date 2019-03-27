@@ -34,13 +34,13 @@ class UserPage extends Component {
     })
   }
 
-  handleChange = e => {
+  handleChange = (e) => {
     const newUser = { ...this.state.user }
     newUser[e.target.name] = e.target.value
     this.setState({ user: newUser })
   }
 
-  handleSignUp = e => {
+  handleSignUp = (e) => {
     e.preventDefault()
     this.createUser()
   }
@@ -98,7 +98,10 @@ class UserPage extends Component {
               value={this.state.user.password}
             />
           </div>
-          <Button style={{ marginTop: '10px' }}>+ Create User</Button>
+          
+          <button>+ Create User</button>
+          {/* style={{ marginTop: '10px' }} */}
+          
         </form>
       </div>
     )

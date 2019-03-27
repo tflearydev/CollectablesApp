@@ -19,7 +19,7 @@ router.post('/', (req, res) => {
     .then((user) => {
       res.json(user)
     })
-    .catch(err => console.log(err))
+    .catch((err) => console.log(err))
 })
 
 // /api/users/:userId

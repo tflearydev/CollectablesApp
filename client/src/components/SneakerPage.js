@@ -29,14 +29,16 @@ const FlexRowCentered = styled(FlexContainerCentered)`
   flex-wrap: wrap;
 `
 
-// const PrimaryButton = styled.button`
-//   background-color: aquamarine;
-//   color: #222;
-//   font-weight: bold;
-//   cursor: pointer;
-//   padding: 15px;
-//   font-size: 1em;
-// `
+const PrimaryButton = styled.button`
+  /* background-color: blue; */
+  color: blue;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 15px;
+  font-size: 1em;
+  border: 2px solid red;
+  border-radius: 3px;
+`
 
 class SneakerPage extends Component {
   state = {
@@ -77,6 +79,16 @@ class SneakerPage extends Component {
     })
   }
 
+  deleteUser=()=>{
+    const userId=this.props.match.params.userId
+    axios.delete(`/api/users/${userId}`)
+    .then(()=>{
+      this.props.history.goBack()
+    })
+  }
+  //Add funcionality to delete a user
+
+
   handleChange = (sneaker, event) => {
     console.log('HANDLE CHANGE')
     // Here we use the spread operator to clone the array
@@ -111,6 +123,11 @@ class SneakerPage extends Component {
           <Button href='/user' style={{ marginRight: '820px' }}>
             Back
           </Button>
+          <PrimaryButton
+                    onClick={this.createIdea}
+                >
+                    Add a Sneaker
+                </PrimaryButton>
 
           <h1>User's Sneaker Collection</h1>
           {/* <Button onClick={this.createSneaker}>New Sneaker</Button>
