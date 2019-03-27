@@ -141,7 +141,7 @@ class SneakerPage extends Component {
     return (
       <div>
         <Wrapper>
-          <StyledLink to='/user' style={{ marginRight: '820px' }}>
+        <StyledLink to='/user' style={{ marginRight: '820px' }}>
             Back
           </StyledLink>
           <DeleteButton onClick={()=>this.deleteUser(this.state.user.userId)}>Delete User</DeleteButton>

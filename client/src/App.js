@@ -1,10 +1,11 @@
 import React, { Component } from 'react'
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom'
 import { Nav } from 'react-bootstrap'
 import { Navbar } from 'react-bootstrap'
 import { Form } from 'react-bootstrap'
 import { FormControl } from 'react-bootstrap'
 import { Button } from 'react-bootstrap'
+import styled from 'styled-components'
 // import { Container } from 'react-bootstrap';
 
 import './App.css'
@@ -16,6 +17,18 @@ import SneakerPage from './components/SneakerPage.js'
 
 // import styled from 'styled-components'
 // remember styled at bottom, check 'diff' way to do it
+
+
+const StyledLink = styled(Link)`
+margin: 0 auto;
+color: black;
+/* border: 2px solid black;
+border-radius: 10px; */
+color: black;
+font-size: 20px;
+/* height: 20px;
+width: 50px; */
+`;
 
 class App extends Component {
   render () {
@@ -34,9 +47,11 @@ class App extends Component {
               Sneaker Colle¢t
             </Navbar.Brand>
             <Nav className='mr-auto'>
-              <Nav.Link href='/'>Home</Nav.Link>
-              <Nav.Link href='/user'>Users</Nav.Link>
-              <Nav.Link href='/#about'>About</Nav.Link>
+            <Nav.Link>
+              <StyledLink to='/' style={{ marginLeft: '20px' }}>Home</StyledLink>
+             <StyledLink to='/user' style={{ marginLeft: '20px' }}>Users</StyledLink>
+              <StyledLink to='/#about' style={{ marginLeft: '20px' }}>About</StyledLink>
+              </Nav.Link>
             </Nav>
             <Form inline>
               <FormControl
