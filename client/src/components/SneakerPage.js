@@ -11,13 +11,13 @@ const Wrapper = styled.div`
 `
 const StyledLink = styled(Link)`
 margin: 0 auto;
-background: black;
-border: 2px solid black;
+background: blue;
+border: 2px solid blue;
 border-radius: 10px;
 color: white;
-font-size: 55px;
+font-size: 20px;
 height: 20px;
-width: 50px;
+width: 70px;
 `;
 
 const Card = styled.div`
