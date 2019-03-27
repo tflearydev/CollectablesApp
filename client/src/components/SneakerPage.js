@@ -78,10 +78,11 @@ class SneakerPage extends Component {
     const userId = this.props.match.params.userId
     axios.post(`/api/users/${userId}/sneakers`).then(res => {
       const newSneakers = [...this.state.sneakers]
-      newSneakers.unshift(res.data) // This will add the new Sneaker to the beginning of the array
+      newSneakers.unshift(res.data) 
       this.setState({ sneakers: newSneakers })
     })
   }
+  // This will add the new Sneaker to the beginning of the array
 
   deleteSneaker = sneaker => {
     const userId = this.props.match.params.userId

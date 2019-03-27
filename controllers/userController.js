@@ -75,7 +75,7 @@ router.patch('/:userId/sneakers/:sneakerId', (req, res) => {
       sneaker.description = update.description
     }
 
-    user.save().then((user) => {
+    user.save().then(user => {
       user.sneakers = user.sneakers.reverse()
       res.json(user)
     })
