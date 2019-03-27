@@ -56,7 +56,7 @@ class UserPage extends Component {
           Back
         </Button>
 
-        <h1>Select or Create a User</h1>
+        <h1>Select or Create User</h1>
         {/* <div>
                 <Button href="/user/new">+ Add User</Button>
                 </div> */}
