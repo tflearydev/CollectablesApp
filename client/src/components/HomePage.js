@@ -10,7 +10,7 @@ background: black;
 border: 2px solid black;
 border-radius: 10px;
 color: white;
-font-size: 40px;
+font-size: 55px;
 height: 20px;
 width: 50px;
 `;
@@ -26,8 +26,7 @@ const splash = styled.div`
 
 class HomePage extends Component {
   render () {
-    return (
-        
+    return (   
       <Jumbotron>
           <br/>
           <br/>
