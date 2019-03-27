@@ -40,6 +40,18 @@ const PrimaryButton = styled.button`
   border-radius: 3px;
 `
 
+const DeleteButton = styled.button`
+height: 40px;
+margin: 0 auto;
+margin-top: 20px;
+margin-right: 800px;
+width: 120px;
+border-radius: 10px;
+background: red;
+font-weight: bold;
+color: white;
+`
+
 class SneakerPage extends Component {
   state = {
     users: {
@@ -95,7 +107,7 @@ class SneakerPage extends Component {
     const newSneakers = [...this.state.sneakers]
 
     // Map through this cloned state and transform the specific sneaker that has been updated.
-    const sneakers = newSneakers.map((savedSneaker) => {
+    const sneakers = newSneakers.map(savedSneaker => {
       if (savedSneaker._id === sneaker._id) {
         // Here we are using bracket syntax instead of dot-notation to transform a specific property
         // More info on bracket syntax here
@@ -123,8 +135,10 @@ class SneakerPage extends Component {
           <Button href='/user' style={{ marginRight: '820px' }}>
             Back
           </Button>
+          <DeleteButton onClick={()=>this.deleteUser(this.state.user.userId)}>Delete User</DeleteButton>
+
           <PrimaryButton
-                    onClick={this.createIdea}
+                    onClick={this.createSneaker}
                 >
                     Add a Sneaker
                 </PrimaryButton>

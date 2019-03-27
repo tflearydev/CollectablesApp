@@ -13,7 +13,6 @@ router.get('/', (req, res) => {
 
 router.post('/', (req, res) => {
   const newUser = new User(req.body.user)
-
   newUser
     .save()
     .then((user) => {
@@ -31,6 +30,13 @@ router.get('/:userId', (req, res) => {
     })
     .catch((err) => console.log(err))
 })
+
+router.delete("/:userId", (req, res) => {
+    User.findByIdAndRemove(req.params.userId).then(user => {
+      user.save()
+        res.json('200 status');  
+    });
+  });
 
 router.post('/:userId/sneakers', (req, res) => {
   User.findById(req.params.userId).then(user => {
