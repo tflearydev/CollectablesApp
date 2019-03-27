@@ -79,6 +79,6 @@ router.patch('/:userId/sneakers/:sneakerId', (req, res) => {
       res.json(user)
     })
   })
-})
+});
 
-module.exports = router
+module.exports = router;
