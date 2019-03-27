@@ -3,11 +3,23 @@ import axios from 'axios'
 import Sneaker from './Sneaker.js'
 import { Button } from 'react-bootstrap'
 import styled from 'styled-components'
+import { Link } from 'react-router-dom'
 
 const Wrapper = styled.div`
   width: 80%;
   margin: 0 auto;
 `
+const StyledLink = styled(Link)`
+margin: 0 auto;
+background: black;
+border: 2px solid black;
+border-radius: 10px;
+color: white;
+font-size: 55px;
+height: 20px;
+width: 50px;
+`;
+
 const Card = styled.div`
   display: flex;
   flex-direction: column;
@@ -129,9 +141,9 @@ class SneakerPage extends Component {
     return (
       <div>
         <Wrapper>
-          <Button href='/user' style={{ marginRight: '820px' }}>
+          <StyledLink to='/user' style={{ marginRight: '820px' }}>
             Back
-          </Button>
+          </StyledLink>
           <DeleteButton onClick={()=>this.deleteUser(this.state.user.userId)}>Delete User</DeleteButton>
 
           <br/>
