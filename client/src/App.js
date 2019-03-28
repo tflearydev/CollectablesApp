@@ -36,7 +36,7 @@ class App extends Component {
       <Router>
         <div className='App'>
           <Navbar bg='light' variant='light'>
-            <Navbar.Brand href='#home'>
+            <Navbar.Brand href='/'>
               <img
                 alt=''
                 src='https://unixtitan.net/images/converse-clipart-shoe-jordan-3.png'
