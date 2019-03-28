@@ -2,7 +2,21 @@ import React, { Component } from 'react'
 import { Redirect, Link } from 'react-router-dom'
 import axios from 'axios'
 import { Button } from 'react-bootstrap'
+import styled from 'styled-components'
 import { Card } from 'react-bootstrap'
+
+const StyledLink = styled(Link)`
+  margin: 0 auto;
+  background: silver;
+  border: 2px solid black;
+  border-radius: 8px;
+  width: 200px;
+  height: 30px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+`;
+
 
 class UserPage extends Component {
   // creating a method to get all users
@@ -65,9 +79,9 @@ class UserPage extends Component {
             <div>
               <Card>
                 <Card.Body>
-                  <Link to={`/user/${user._id}`} key={user._id}>
+                  <StyledLink to={`/user/${user._id}`} key={user._id}>
                     {user.userName}
-                  </Link>
+                  </StyledLink>
                 </Card.Body>
               </Card>
             </div>
