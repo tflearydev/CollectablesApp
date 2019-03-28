@@ -6,28 +6,18 @@ import { Form } from 'react-bootstrap'
 import { FormControl } from 'react-bootstrap'
 import { Button } from 'react-bootstrap'
 import styled from 'styled-components'
-// import { Container } from 'react-bootstrap';
-
 import './App.css'
 import HomePage from './components/HomePage.js'
 import UserPage from './components/UserPage.js'
 import SneakerPage from './components/SneakerPage.js'
-// import Header from './components/Navbar.js'
-// import { Navbar, Nav, NavItem } from 'react-bootstrap'
 
-// import styled from 'styled-components'
-// remember styled at bottom, check 'diff' way to do it
 
 
 const StyledLink = styled(Link)`
 margin: 0 auto;
 color: black;
-/* border: 2px solid black;
-border-radius: 10px; */
 color: black;
 font-size: 20px;
-/* height: 20px;
-width: 50px; */
 `;
 
 class App extends Component {

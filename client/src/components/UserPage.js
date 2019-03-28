@@ -57,9 +57,6 @@ class UserPage extends Component {
         </Button>
 
         <h1>Select or Create User</h1>
-        {/* <div>
-                <Button href="/user/new">+ Add User</Button>
-                </div> */}
 
         <br />
 
@@ -100,7 +97,6 @@ class UserPage extends Component {
           </div>
           
           <button>+ Create User</button>
-          {/* style={{ marginTop: '10px' }} */}
           
         </form>
       </div>

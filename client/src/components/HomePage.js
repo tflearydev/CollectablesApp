@@ -1,7 +1,5 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
-// import { Jumbotron } from 'react-bootstrap'
-// import { Image } from 'react-bootstrap'
 import styled from 'styled-components'
 
 const StyledLink = styled(Link)`
@@ -23,6 +21,7 @@ const Jumbotron = styled.div`
 class HomePage extends Component {
   render () {
     return (   
+      //refactor here and give it a height
       <Jumbotron>
           <br/>
           <br/>
@@ -32,7 +31,6 @@ class HomePage extends Component {
           <br/>
           <br/>
           <br/>
-    
         <StyledLink to='/user'>Sneaker Colle¢t</StyledLink>
 
       </Jumbotron>

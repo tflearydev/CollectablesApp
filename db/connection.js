@@ -22,5 +22,5 @@ mongoose.connection.once('open', () => {
   console.log('Mongoose has connected to MongoDB')
 })
 
-// export here is so that I can export it elsewhere in the app
+// export here so that I can export it elsewhere in the app
 module.exports = mongoose

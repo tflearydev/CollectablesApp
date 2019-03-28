@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import axios from 'axios'
 import Sneaker from './Sneaker.js'
-// import { Button } from 'react-bootstrap'
 import styled from 'styled-components'
 import { Link } from 'react-router-dom'
 
@@ -40,17 +39,6 @@ const FlexRowCentered = styled(FlexContainerCentered)`
   flex-direction: row;
   flex-wrap: wrap;
 `
-
-// const PrimaryButton = styled.button`
-//   /* background-color: blue; */
-//   color: blue;
-//   font-weight: bold;
-//   cursor: pointer;
-//   padding: 15px;
-//   font-size: 1em;
-//   border: 2px solid salmon;
-//   border-radius: 3px;
-// `
 
 const DeleteButton = styled.button`
 height: 40px;
