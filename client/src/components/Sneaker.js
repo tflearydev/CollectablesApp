@@ -5,7 +5,7 @@ import styled from 'styled-components'
 const SneakerWrapper = styled.div`
     display: flex;
     flex-direction: column;
-    
+
     input, textarea,  {
         padding: 10px;
         margin-bottom: 5px;
@@ -26,6 +26,7 @@ const SneakerWrapper = styled.div`
         height: 200px;
     }
 `
+//put all inside the wrapper to make it mobile responsive
 
 const DeleteButton = styled.button`
     background-color: salmon;
