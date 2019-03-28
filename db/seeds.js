@@ -16,7 +16,7 @@ const yeezy = new Sneaker({
   // size: '10',
   // releaseDate: '3/5/19',
   // condition: 'A',
-  // value: 'https://stockx.com/adidas-yeezy-boost-700-inertia'
+  image: 'https://stockx.com/adidas-yeezy-boost-700-inertia'
 })
 const prestoWhite = new Sneaker({
   title: 'Nike Air Presto Off-White (White)',
@@ -27,7 +27,7 @@ const prestoWhite = new Sneaker({
   // size: '10.5',
   // releaseDate: '11/5/19',
   // condition: 'A',
-  // value: 'https://stockx.com/nike-air-presto-off-white-black-2018'
+  image: 'https://stockx.com/nike-air-presto-off-white-black-2018'
 })
 
 const prestoBlack = new Sneaker({
@@ -39,7 +39,7 @@ const prestoBlack = new Sneaker({
   // size: '10.5',
   // releaseDate: '11/5/19',
   // condition: 'A',
-  // value: 'https://stockx.com/nike-air-presto-off-white-black-2018'
+  image: 'https://stockx.com/nike-air-presto-off-white-black-2018'
 })
 
 const react = new Sneaker({
@@ -51,7 +51,7 @@ const react = new Sneaker({
   // size: '10.5',
   // releaseDate: '11/5/19',
   // condition: 'A',
-  // value: 'https://stockx.com/nike-air-presto-off-white-black-2018'
+  image: 'https://stockx.com/nike-air-presto-off-white-black-2018'
 })
 
 const tray = new User({

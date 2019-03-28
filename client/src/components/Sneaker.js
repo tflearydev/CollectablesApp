@@ -1,9 +1,10 @@
 import React from 'react'
 import styled from 'styled-components'
+import { Link } from 'react-router-dom'
 
 const SneakerWrapper = styled.div`
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     
     input, textarea,  {
         padding: 10px;
@@ -56,6 +57,11 @@ function Sneaker (props) {
         onMouseOut={e => props.updateSneaker(props.sneaker, e)}
         value={props.sneaker.description}
       />
+      
+      <a href={props.sneaker.image}>Buy or Sell</a>
+    
+
+    
 
       {/* <input
       name='value'
