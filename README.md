@@ -35,6 +35,8 @@ ____
 
 <img src='pics/data2.png' alt='home' height=450 width=450/>
 
+* Showcasing mongo competance and skills, called local api with axios
+
 
 ## Features
 ___
