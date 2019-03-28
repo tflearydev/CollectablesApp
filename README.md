@@ -31,12 +31,12 @@ ___
 
 ## Local Created Api(Mongo Data)
 ____
-<img src='pics/data1.png' alt='home' height=450 width=450/>
-
-<img src='pics/data2.png' alt='home' height=450 width=450/>
 
 * Showcasing mongo competance and skills, called local api with axios
 
+<img src='pics/data1.png' alt='home' height=450 width=450/>
+
+<img src='pics/data2.png' alt='home' height=450 width=450/>
 
 ## Features
 ___
