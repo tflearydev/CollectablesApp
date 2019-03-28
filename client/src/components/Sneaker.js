@@ -40,6 +40,7 @@ const DeleteButton = styled.button`
 
 function Sneaker (props) {
   return (
+      
     <SneakerWrapper>
     
       <input
@@ -59,7 +60,8 @@ function Sneaker (props) {
         value={props.sneaker.description}
       />
 
-      <img src={props.sneaker.image} alt='https://unixtitan.net/images/converse-clipart-shoe-jordan-3.png'/>
+      <img
+      Link src={props.sneaker.image} alt='https://unixtitan.net/images/converse-clipart-shoe-jordan-3.png'/>
       
       <a href={props.sneaker.value}>Buy or Sell</a>
     
@@ -68,6 +70,7 @@ function Sneaker (props) {
         Delete Sneaker
       </DeleteButton>
       </SneakerWrapper>
+      
     
   )
 }
