@@ -13,6 +13,10 @@ const SneakerSchema = new Schema({
         type: String,
         default: "Size, Release Date, Shoe Condition Here"
       }
+    //   value: {
+    //       type: String,
+    //       default: 'Link to Buy or Sell Here'
+    //   }
 //   brand: {
 //     type: String,
 //     required: true
