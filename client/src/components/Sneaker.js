@@ -3,7 +3,7 @@ import styled from 'styled-components'
 
 const SneakerWrapper = styled.div`
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     
     input, textarea {
         padding: 10px;
@@ -14,6 +14,10 @@ const SneakerWrapper = styled.div`
     }
     input {
         font-size: 1.15em;
+        font-weight: bold;
+    }
+    textarea {
+        background-color: white;
     }
 `
 
@@ -36,6 +40,8 @@ function Sneaker (props) {
       <input
         type='text'
         name='title'
+        // cols='30'
+        // rows='5'
         onChange={e => props.handleChange(props.sneaker, e)}
         onMouseOut={e => props.updateSneaker(props.sneaker, e)}
         value={props.sneaker.title}
@@ -43,7 +49,7 @@ function Sneaker (props) {
       <textarea
         name='description'
         cols='30'
-        rows='10'
+        rows='3'
         onChange={e => props.handleChange(props.sneaker, e)}
         onMouseOut={e => props.updateSneaker(props.sneaker, e)}
         value={props.sneaker.description}
