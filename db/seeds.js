@@ -17,7 +17,7 @@ const yeezy = new Sneaker({
   // size: '10',
   // releaseDate: '3/5/19',
   // condition: 'A',
-  value: 'https://stockx.com/adidas-yeezy-boost-700-inertia'
+  value: 'https://www.stockx.com/adidas-yeezy-boost-700-inertia'
 })
 const prestoWhite = new Sneaker({
   title: 'Nike Air Presto Off-White (Black)',

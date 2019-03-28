@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-// import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 const SneakerWrapper = styled.div`
     display: flex;
@@ -60,8 +60,7 @@ function Sneaker (props) {
         value={props.sneaker.description}
       />
 
-      <img
-      Link src={props.sneaker.image} alt='https://unixtitan.net/images/converse-clipart-shoe-jordan-3.png'/>
+      <img src={props.sneaker.image} alt='https://unixtitan.net/images/converse-clipart-shoe-jordan-3.png'/>
       
       <a href={props.sneaker.value}>Buy or Sell</a>
     
