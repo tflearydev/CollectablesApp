@@ -13,7 +13,11 @@ const SneakerSchema = new Schema({
         type: String,
         default: "Size, Release Date, Shoe Condition Here"
       },
-       image: {
+      image: {
+          type: String,
+          default: 'https://unixtitan.net/images/converse-clipart-shoe-jordan-3.png'
+      },
+       value: {
            type: String,
            default: 'Link to Buy or Sell Here'
       }

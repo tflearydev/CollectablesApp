@@ -21,6 +21,10 @@ const SneakerWrapper = styled.div`
         background-color: white;
     }
     
+    img {
+        width: 300px;
+        height: 200px;
+    }
 `
 
 const DeleteButton = styled.button`
@@ -57,8 +61,10 @@ function Sneaker (props) {
         onMouseOut={e => props.updateSneaker(props.sneaker, e)}
         value={props.sneaker.description}
       />
+
+      <img src={props.sneaker.image}/>
       
-      <a href={props.sneaker.image}>Buy or Sell</a>
+      <a href={props.sneaker.value}>Buy or Sell</a>
     
 
     
