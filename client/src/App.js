@@ -65,7 +65,7 @@ class App extends Component {
 
           <br />
 
-          {/* <Header className='Header'/> */}
+          
           <Switch>
             <Route exact path='/' component={HomePage} />
             <Route exact path='/user' component={UserPage} />

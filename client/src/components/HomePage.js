@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 // import { Jumbotron } from 'react-bootstrap'
-import { Image } from 'react-bootstrap'
+// import { Image } from 'react-bootstrap'
 import styled from 'styled-components'
 
 const StyledLink = styled(Link)`
@@ -19,10 +19,6 @@ const Jumbotron = styled.div`
   background-image: url('https://static1.squarespace.com/static/5717b2c82b8dde83cf76c2b2/5913bdd62994ca3a9fc3e64d/5913bdd7c534a5e3456902e7/1494466009609/titolo-swiss-sneaker-king-store-in-basel-1493369494-1.jpg');
   height: 500px;
 `
-const splash = styled.div`
-    background: black;
-    color: white;
-    `
 
 class HomePage extends Component {
   render () {
@@ -36,10 +32,9 @@ class HomePage extends Component {
           <br/>
           <br/>
           <br/>
-          {/* <Image src="https://cdn.shopify.com/s/files/1/2060/1003/files/grey-orange-beluga-yeezy-photos-0_large.jpg?v=1511919320"/> */}
-        {/* <h1 className="splash">Sneaker Colle¢t</h1> */}
+    
         <StyledLink to='/user'>Sneaker Colle¢t</StyledLink>
-        {/* <Link to='/user'>Enter Here</Link> */}
+
       </Jumbotron>
     
     )

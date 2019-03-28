@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import axios from 'axios'
 import Sneaker from './Sneaker.js'
-import { Button } from 'react-bootstrap'
+// import { Button } from 'react-bootstrap'
 import styled from 'styled-components'
 import { Link } from 'react-router-dom'
 

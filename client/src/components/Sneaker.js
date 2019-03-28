@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Link } from 'react-router-dom'
+// import { Link } from 'react-router-dom'
 
 const SneakerWrapper = styled.div`
     display: flex;
@@ -37,8 +37,6 @@ const DeleteButton = styled.button`
 `
 
 
-
-
 function Sneaker (props) {
   return (
     <SneakerWrapper>
@@ -46,8 +44,6 @@ function Sneaker (props) {
       <input
         type='text'
         name='title'
-        // cols='30'
-        // rows='5'
         onChange={e => props.handleChange(props.sneaker, e)}
         onMouseOut={e => props.updateSneaker(props.sneaker, e)}
         value={props.sneaker.title}
@@ -62,19 +58,10 @@ function Sneaker (props) {
         value={props.sneaker.description}
       />
 
-      <img src={props.sneaker.image}/>
+      <img src={props.sneaker.image} alt='https://unixtitan.net/images/converse-clipart-shoe-jordan-3.png'/>
       
       <a href={props.sneaker.value}>Buy or Sell</a>
     
-
-    
-
-      {/* <input
-      name='value'
-      cols='30'
-      rows='2'
-      /> */}
-
 
       <DeleteButton onClick={() => props.deleteSneaker(props.sneaker)}>
         Delete Sneaker
