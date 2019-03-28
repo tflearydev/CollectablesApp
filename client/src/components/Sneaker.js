@@ -52,7 +52,7 @@ function Sneaker (props) {
       <textarea
         name='description'
         cols='30'
-        rows='5'
+        rows='3'
         onChange={e => props.handleChange(props.sneaker, e)}
         onMouseOut={e => props.updateSneaker(props.sneaker, e)}
         value={props.sneaker.description}
