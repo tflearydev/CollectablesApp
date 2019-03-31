@@ -18,7 +18,6 @@ const SneakerSchema = new Schema({
            type: String,
            default: 'Link to Buy or Sell Here'
       }
-
 })
 
 const UserSchema = new Schema({
