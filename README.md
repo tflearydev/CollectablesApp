@@ -1,10 +1,9 @@
 # 'Sneaker Colle¢t' (Sneaker Collection App)
 
-<<<<<<< HEAD
 This application is to help users keep track of their sneaker collections, along with competing with the collections of others(e.g. total value, rarity of sneaker, etc). New users can be added or deleted, while each user is able to add,edit, and delete sneakers in thier collections *New Features in Production*
 =======
 As the buying, selling, and trading of high value sneakers is currently very popular, this application helps users keep track of their sneaker collections, along with competing with the collections of others(e.g. total value, rarity of sneaker, etc). New users can be added or deleted, while each user is able to add, edit, and delete sneakers in thier collections *New Features in Production*
->>>>>>> de54aae93ca47a6ae6226fe89800205f434c2f47
+
 
 ## Technologies Used:
 ____
