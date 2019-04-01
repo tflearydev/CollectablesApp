@@ -7,9 +7,9 @@ app.use(logger('dev'))
 app.use(express.json())
 app.use(express.static(__dirname + '/client/build/'))
 
-app.use('/api/users', userController)
+app.use('/api/users/', userController)
 
-app.get('/', (req, res) => {
+app.get('/*', (req, res) => {
   res.sendFile(__dirname + '/client/build/index.html')
 })
 
