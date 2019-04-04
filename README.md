@@ -6,7 +6,7 @@ As the buying, selling, and trading of high value sneakers is currently very pop
 ## Technologies Used:
 ____
 * Visual Studio Code
-* Mongo, Express, React, Node.js (MERN Stack)
+* MongoDB, Expressjs, React.js, Node.js
 * Javascript (Main Language Used: 91% of code)
 * Bootstrap, Styled-Components, CSS, Google Fonts (Styling)
 
