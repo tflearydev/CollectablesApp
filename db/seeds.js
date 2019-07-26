@@ -1,4 +1,4 @@
-// Supplying some seed data
+// Supplying seed data
 
 require('dotenv').config()
 const mongoose = require('mongoose')
