@@ -34,6 +34,8 @@ class HomePage extends Component {
         <StyledLink to='/user'>Sneaker Colle¢t</StyledLink>
 
       </Jumbotron>
+
+    
     
     )
   }
