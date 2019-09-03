@@ -36,3 +36,4 @@ module.exports = {
   SneakerSchema: SneakerSchema,
   UserSchema: UserSchema
 }
+// reseeding database
